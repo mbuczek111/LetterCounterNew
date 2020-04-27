@@ -11,7 +11,7 @@ public class LetterCounterNew {
 
         phrase = phrase.replaceAll("\\s+","");
 
-        TreeMap<Character, Integer> map = new TreeMap<Character, Integer>();
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         for (int i = 0; i < phrase.length(); i++) {
             char letter = phrase.charAt(i);
             Integer counter = map.get(letter);
